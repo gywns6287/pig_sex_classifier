@@ -1,0 +1,6 @@
+Accuracy: 1.0
+F1 score: 1.0
+Learning_rate: 1e-05
+epochs: 100
+batch_size: 16
+input_shape: (224, 224, 3)
