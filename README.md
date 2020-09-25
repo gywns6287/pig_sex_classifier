@@ -38,6 +38,6 @@ pre-trained weight can be downloaded at https://drive.google.com/drive/folders/1
 	male
   !(C:\Users\user\Desktop\my_scripts\for_git\pig_sex_classifier\results\B-2020.07.29-09-41-01-0000430 C1.tif_male_male_1.0.png)
 	female
-  ![female](C:\Users\user\Desktop\my_scripts\for_git\pig_sex_classifier\results\B-2020.07.20-11-47-36-0000702 C1.tif_female_female_1.0.png)
+  ![female](C:/Users/user/Desktop/my_scripts/for_git/pig_sex_classifier/results/B-2020.07.20-11-47-36-0000702 C1.tif_female_female_1.0.png)
 	boar
   ![female](C:\Users\user\Desktop\my_scripts\for_git\pig_sex_classifier\results\B-2020.03.17-09-32-48-0000418 C1.tif_boar_boar_1.0.png)
