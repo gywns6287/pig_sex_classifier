@@ -25,7 +25,7 @@ The pre-trained weight must exist as `weight.h5` in the path where `solution.py`
 
 ## Datasets & pre-trained weight
 
-The `data` folder contains only simple sample images and does not contain the data used for model training.  All the data-set used in this study was provided by Artificial Intelligence Convergence Research Center(Chungnam National University)). Request for academic urposes can be made to gywns6298@nvaer.com.
+The `data` folder contains only simple sample images and does not contain the data used for model training.  All the data-set used in this study was provided by Artificial Intelligence Convergence Research Center(Chungnam National University)). Request for academic purposes can be made to gywns6298@naver.com.
 
 pre-trained weight can be downloaded at https://drive.google.com/drive/folders/1jcsroiExir9e4PKU6kFVmHBAZLdaAMx5?usp=sharing
 
