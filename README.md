@@ -35,6 +35,6 @@ pre-trained weight can be downloaded at https://drive.google.com/drive/folders/1
 1. `pred.sol`: estimation results for test image set.
 2. `summary.txt`: summary of test results (accuracy, F1-score).
 3. **CAM**
-  !(C:\Users\user\Desktop\my_scripts\for_git\pig_sex_classifier\results\B-2020.07.29-09-41-01-0000430 C1.tif_male_male_1.0.png)
-  ![female](C:/Users/user/Desktop/my_scripts/for_git/pig_sex_classifier/results/B-2020.07.20-11-47-36-0000702 C1.tif_female_female_1.0.png)
+  ![Female](https://user-images.githubusercontent.com/71325306/94219528-0240e600-ff22-11ea-8bf5-a708fe9f17ae.png)
+  ![Male](https://user-images.githubusercontent.com/71325306/94219530-040aa980-ff22-11ea-96df-b3145fade5ee.png)
   ![Boar](https://user-images.githubusercontent.com/71325306/94219434-cd349380-ff21-11ea-9f99-e1b91adda17b.png)
