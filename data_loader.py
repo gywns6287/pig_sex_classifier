@@ -38,7 +38,7 @@ class test_prediction():
 def file_save(summary_dict, filenames, pred, ture, prob, out):
     with open(out+'\\'+'pred.sol','w') as sol:
         sol.write('FILE\tTRUE\tPRED\tprob\n')
-        for f, t, p, pr in zip(filenames, pred, ture, prob):
+        for f, t, p, pr in zip(filenames, true, pred, prob):
             sol.write('\t'.join([f, t, p, str(pr)])+'\n')
     #
     with open(out+'\\'+'summary.txt','w') as save:
