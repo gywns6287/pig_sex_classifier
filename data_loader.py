@@ -25,7 +25,7 @@ class test_prediction():
     def __init__(self, model,gen,out):
         class_dict = {v:k for k,v in gen.geninfo.class_indices.items()}
         #
-        pre = model.predict(gen.gen,steps = len(gen.geninfo)) 
+        pre = model.predict(gen,steps = len(gen.geninfo)) 
         self.pre_class = np.array([class_dict[i] for i in np.argmax(pre, axis = 1)])
         self.true_class = np.array([class_dict[i] for i in gen.geninfo.classes])
         self.prob = pre[(range(len(pre)),np.argmax(pre, axis = 1))] 
@@ -35,7 +35,7 @@ class test_prediction():
         self.acc = round(sum(self.pre_class ==self. true_class)/len(self.true_class),4)
 
 
-def file_save(summary_dict, filenames, pred, ture, prob, out):
+def file_save(summary_dict, filenames, pred, true, prob, out):
     with open(out+'\\'+'pred.sol','w') as sol:
         sol.write('FILE\tTRUE\tPRED\tprob\n')
         for f, t, p, pr in zip(filenames, true, pred, prob):
@@ -80,10 +80,21 @@ class crop_loader():
                                         target_size = start_size,
                                         batch_size = batch_size,
                                         shuffle = False)
-        self.gen = self.data_gen(self.geninfo)
-    def data_gen(self,data_flow):
-        for x,y in data_flow:
-            h = x.shape[1] - self.target_size[1]
-            w = x.shape[2] - self.target_size[0]
-            x_ = x[:,h:,w:,:]
-            yield x_, y 
+ #   
+    def __iter__(self):
+        return self
+#
+    def __next__(self):
+        x,y = next(self.geninfo)
+        h = x.shape[1] - self.target_size[1]
+        w = x.shape[2] - self.target_size[0]
+        x_ = x[:,h:,w:,:]
+        return x_, y 
+
+def step_decay(lr0,decay,round = 20):
+    def step_decay_fn(epoch):
+        R = (epoch)//round + 1
+        new_lr = lr0 * decay**(R-1)
+        print('lr: {0}'.format(new_lr))
+        return new_lr
+    return step_decay_fn  
