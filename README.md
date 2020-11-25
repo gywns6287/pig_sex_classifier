@@ -49,8 +49,8 @@ pre-trained weight can be downloaded at https://drive.google.com/drive/folders/1
   ![Boar](https://user-images.githubusercontent.com/71325306/94219434-cd349380-ff21-11ea-9f99-e1b91adda17b.png)
   
 ## Test results
-Model was trained by 5,909 pig carcass images,
-and test set contain 1,386 images.
+Model was trained by 5,532 pig carcass images,
+and test set contain 1,381 images.
 
 |Acc  |F1 score|
 |-----|--------|
