@@ -54,5 +54,5 @@ and test set contain 1,386 images.
 
 |Acc  |F1 score|
 |-----|--------|
-|0.993|0.990   |
+|0.996|0.996   |
 
